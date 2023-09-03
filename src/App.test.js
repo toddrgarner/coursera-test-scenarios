@@ -8,3 +8,9 @@ import '@testing-library/jest-dom';
 
 const rangeInput = screen.getByLabelText(/Score:/);
 fireEvent.change(rangeInput, { target: { value: score }});
+
+const textArea = screengetByLabelText(/Comments:/);
+fireEvent.change(textArea, { target: { value: comment }});
+
+const submitButton = screen.getByRole("button");
+fireEvent.click(submitButton);
